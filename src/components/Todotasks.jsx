@@ -1,11 +1,14 @@
-
-const Todotasks = () => {
+const Todotasks = ({ task, date }) => {
   return (
     <>
       <div className="tasks">
-        <p>Mytask</p>
-        <p>04/10/22024</p>
-        <button className="bt-del">Delete</button>
+        <div className="task">
+          <h2>Task : {task}</h2>
+        </div>
+        <div className="date">
+          <h3>Date : {date}</h3>
+        </div>
+        <button className="bt-del" onClick={delelteHandler}>Delete</button>
       </div>
     </>
   );
